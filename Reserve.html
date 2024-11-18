@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Restaurant.css"/>
+    <link rel="icon" href="Images/NovelEats.jpg" />
+    <title>NovelEats</title>
+    <style>
+        
+        .tableContent{
+            display: inline-block;
+            width: 100%;
+            height: 37vh;
+            margin-top: 0;
+            background-color: #a55c1b;
+            background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);            
+            padding-left: 200px;
+            padding-top: 0;
+            
+        }
+        .content{
+            align-items: center;
+            width: 100%;
+            height: 62.5vh;
+            padding-top: 100px;
+            background-color: #a55c1b;
+            background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+            padding-left: 400px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        #fst {
+            font-size: 160px;
+            color: white;
+            font-weight: 600;
+            transition: 0.5s;
+            font-family: cursive;
+        }
+        
+        #scnd{
+            font-size: 160px;
+            font-family: cursive;
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+            transition: 0.5s;
+        }
+   
+        #fst:hover{
+            font-family: cursive;
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+
+        #scnd:hover{
+            color: white;
+            font-family: cursive;
+        }
+
+        .content h2{
+            font-family: cursive;
+            align-items: center;
+            margin-left: 100px;
+            margin-top: 10px;
+            color: rgb(193, 154, 107);
+            font-size: 50px;
+        }
+        
+        .content h4{
+            font-family: cursive;
+            align-items: center;
+            margin-left: 150px;
+            margin-top: 10px;
+            color: rgb(193, 154, 107);
+            font-size: 25px;
+        }
+
+        table{
+            
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        
+        #option{
+            padding-left: 20px;
+        }
+        select{
+            width: 180px;
+            padding: 6px 30px;
+            align-items: center;
+            font-family: cursive;
+            background-color: rgb(40, 40, 43);
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input{
+            width: 180px;
+            padding: 6px 30px;
+            align-items: center;
+            font-family: cursive;
+            margin-left:30px;
+            background-color: transparent;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .butn {
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
+            border-radius: 50px;
+            cursor: pointer;
+            outline: none;
+            margin-top: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 180px;
+            margin-bottom: 10px;
+        }
+
+        .butn-primary  {
+            color: black;
+            background: rgb(150, 121, 105);
+        }
+
+        .butn-primary:hover {
+            background: rgb(111, 78, 55);
+            transition: background 0.3s ease-in-out;
+            color: white;
+        }
+
+        .book{
+            color: rgb(150, 121, 105);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="navbar-container container">
+               
+                <ul class="menu-items">
+                    <li><a href="Restaurant.html">Return to Home</a></li>
+                    <li><a href="FoodMenu.html">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <h1 class="logo">NovelEats</h1>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1 style="display: inline" id="fst">Novel</h1> <h1 id="scnd"style="display: inline">Eats</h1>
+        <h2>Reserve A Table</h2>
+        <h4>How would you like your coffee?</h4>
+        
+    </div>
+    <div class="tableContent">
+        <table>
+            <tr>
+                <td class="book">
+                    <label for="Guests" >Party Size</label>
+                </td>
+                <td id="option">
+                    <select>
+                        <option value="2 Guests">2 Guests</option>
+                        <option value="3 Guests">3 Guests</option>
+                        <option value="4 Guests">4 Guests</option>
+                        <option value="5 Guests">5 Guests</option>
+                        <option value="6 Guests">6 Guests</option>
+                        <option value="7 Guests">7 Guests</option>
+                        <option value="8 Guests">8 Guests</option>
+                    </select>
+                </td> 
+                <td style="width: 60px;"></td>
+                <td class="book">
+                    <label for="Date">Date</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+                <td style="width: 60px;"></td>
+                <td class="book">
+                    <label for="time">Time</label>
+                </td>
+                <td>
+                    <input type="time" placeholder="03:00">
+                </td>
+                <td style="width: 60px;"></td>
+                <td>
+                    <button type="submit" value="Find" class="butn butn-primary">Find a Table</button>
+                </td>
+            </tr>
+    
+        </table>
+    </div>
+   
+</body>
+</html>
